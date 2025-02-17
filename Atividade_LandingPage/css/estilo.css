@@ -11,6 +11,16 @@ header {
     text-align: left;
 }
 
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 5rem;
+}
+
+section h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+}
+
 body nav {
     background-color: cadetblue;
     color: black;
@@ -26,4 +36,20 @@ section h2 {
     padding: 10px;
     justify-content: center;
     border-radius: 10px;
+}
+
+.caixa-branca {
+    display: inline-block;
+    padding: 10px; margin-top: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+.texto-verde {
+    color: darkgreen;
+}
+
+img {
+    width: 200px;
+    height: 150px;
 }
