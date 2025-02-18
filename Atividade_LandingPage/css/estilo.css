@@ -1,21 +1,15 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0; padding: 0;
-    background-color: #f4f4f4;
+    background-color: bisque;
 }
 
 header {
     background-color: darkseagreen;
     color: black;
-    padding: 40px;
+    padding: 0 0 40px 40px;
     text-align: left;
 }
-
-h1 {
-    font-family: "Roboto", sans-serif;
-    font-size: 5rem;
-}
-
 
 nav {
     background-color: cadetblue;
@@ -48,8 +42,11 @@ article {
 }
 
 
+
+
 #imagem-cabecalho {
     margin: 0;
+    padding: 0;
 }
 
 .caixa-branca {
@@ -74,8 +71,10 @@ article {
     margin: 20px;
 }
 
-.fonte-head {
+#fonte-head {
     font-family: "Piedra", sans-serif;
+    font-weight: 90px;
+    font-size: 5rem;
 }
 
 .fonte-h2 {
