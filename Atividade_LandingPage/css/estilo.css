@@ -16,40 +16,68 @@ h1 {
     font-size: 5rem;
 }
 
-section h2 {
-    font-family: "Roboto", sans-serif;
-    font-size: 2.5rem;
-}
 
-body nav {
+nav {
     background-color: cadetblue;
     color: black;
     padding: 10px;
     display: flex;
     justify-content: center;
-    text-decoration: none;
 }
 
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    margin: 20px;
+}
 section h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
     background-color: darkseagreen;
     color: white;
     padding: 10px;
-    justify-content: center;
+    text-align: center;
     border-radius: 10px;
+}
+
+article {
+    margin: 20px;
+}
+
+
+#imagem-cabecalho {
+    margin: 0;
 }
 
 .caixa-branca {
     display: inline-block;
-    padding: 10px; margin-top: 10px;
+    padding: 10px;
     background-color: white;
     color: black;
     border-radius: 5px;
+    margin: 5px 40px;
 }
 .texto-verde {
     color: darkgreen;
 }
 
-img {
-    width: 200px;
-    height: 150px;
+.float-right {
+    float: right;
+    margin: 20px;
+}
+
+.float-left {
+    float: left;
+    margin: 20px;
+}
+
+.fonte-head {
+    font-family: "Piedra", sans-serif;
+}
+
+.fonte-h2 {
+    font-family: "Monomakh", sans-serif;
 }
