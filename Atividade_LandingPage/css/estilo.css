@@ -41,7 +41,10 @@ article {
     margin: 20px;
 }
 
-
+.coluna {
+    width: 30%;
+    justify-content: space-between;
+}
 
 
 #imagem-cabecalho {
@@ -71,7 +74,7 @@ article {
     margin: 20px;
 }
 
-#fonte-head {
+#fonte-header {
     font-family: "Piedra", sans-serif;
     font-weight: 90px;
     font-size: 5rem;
