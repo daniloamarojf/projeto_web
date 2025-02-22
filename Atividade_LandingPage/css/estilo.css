@@ -25,11 +25,11 @@ nav a {
 }
 
 section {
-    margin: 20px;
+    margin: 80px;
 }
 section h2 {
     font-family: "Roboto", sans-serif;
-    font-size: 2.5rem;
+    font-size: 3rem;
     background-color: darkseagreen;
     color: white;
     padding: 10px;
@@ -37,10 +37,15 @@ section h2 {
     border-radius: 10px;
 }
 
-article {
+article p {
     margin: 20px;
+    font-size: 1.3rem;
 }
 
+#imagem-central {
+    width: 1000px;
+    height: 1000px;
+}
 
 .colunas {
     display: flex;
@@ -49,11 +54,14 @@ article {
 }
 
 .coluna-um,.coluna-dois {
-    width: 35%;
+    width: 45%;
     text-align: justify;
     line-height: 1.8;
 }
 
+article h3 {
+    font-size: 1.5rem;
+}
 
 #imagem-cabecalho {
     margin: 0;
