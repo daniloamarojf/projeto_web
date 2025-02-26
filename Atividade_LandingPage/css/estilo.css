@@ -1,14 +1,38 @@
+header {
+    background-color: darkseagreen;
+    color: black;
+    padding: 0 0 40px 40px;
+    text-align: left;
+    width: 75%;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0; padding: 0;
     background-color: bisque;
 }
 
-header {
+section {
+    margin: 80px;
+}
+
+section h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 3rem;
     background-color: darkseagreen;
-    color: black;
-    padding: 0 0 40px 40px;
-    text-align: left;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+article p {
+    margin: 20px;
+    font-size: 1.3rem;
+}
+
+article h3 {
+    font-size: 1.5rem;
 }
 
 nav {
@@ -24,23 +48,6 @@ nav a {
     color: black;
 }
 
-section {
-    margin: 80px;
-}
-section h2 {
-    font-family: "Roboto", sans-serif;
-    font-size: 3rem;
-    background-color: darkseagreen;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-article p {
-    margin: 20px;
-    font-size: 1.3rem;
-}
 
 #imagem-central {
     width: 1000px;
@@ -59,13 +66,17 @@ article p {
     line-height: 1.8;
 }
 
-article h3 {
-    font-size: 1.5rem;
+#fonte-header {
+    font-family: "Piedra", sans-serif;
+    font-weight: 90px;
+    font-size: 5rem;
 }
 
 #imagem-cabecalho {
     margin: 0;
     padding: 0;
+    width: 75%;
+    height: auto;
 }
 
 .caixa-branca { 
@@ -86,12 +97,6 @@ article h3 {
 .float-left {
     float: left;
     margin: 20px;
-}
-
-#fonte-header {
-    font-family: "Piedra", sans-serif;
-    font-weight: 90px;
-    font-size: 5rem;
 }
 
 .fonte-h2 {
