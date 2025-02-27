@@ -28,6 +28,13 @@ section h2 {
     border-radius: 10px;
 }
 
+section a {
+    justify-content: right;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+
 article p {
     margin: 40px;
     font-size: 1rem;
@@ -48,13 +55,6 @@ nav {
 }
 
 nav a {
-    text-decoration: none;
-    color: black;
-}
-
-section a {
-    justify-content: right;
-    font-size: 1.5rem;
     text-decoration: none;
     color: black;
 }
