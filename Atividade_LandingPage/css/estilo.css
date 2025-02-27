@@ -5,7 +5,7 @@ header {
     margin: 0;
     text-align: left;
     width: 100%;
-    height: 595px;
+    height: 756px;
 }
 
 body {
@@ -52,6 +52,19 @@ nav a {
     color: black;
 }
 
+section a {
+    justify-content: right;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    background-color: darkseagreen;
+    text-align: center;
+    padding: 40px;
+    font-size: 1.5rem;
+}
 
 #imagem-central {
     padding: 40px 0 0 0;
@@ -72,7 +85,6 @@ nav a {
 
 .coluna-imagem {
     width: 45%;
-    line-height: 1.8;
 }
 
 .coluna-um,.coluna-dois {
@@ -84,7 +96,12 @@ nav a {
 #fonte-header {
     font-family: "Piedra", sans-serif;
     font-weight: 90px;
-    font-size: 5rem;
+    font-size: 7rem;
+}
+
+.fonte-h2 {
+    font-family: "Monomakh", sans-serif;
+    font-size: 2rem;
 }
 
 #imagem-cabecalho {
@@ -112,11 +129,8 @@ nav a {
 
 .float-left {
     float: left;
-    margin: 20px;
-    width: 400px;
+    margin: 10px 40px 10px 40px;
+    width: 350px;
     height: auto;
 }
 
-.fonte-h2 {
-    font-family: "Monomakh", sans-serif;
-}
