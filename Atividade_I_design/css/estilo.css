@@ -9,10 +9,11 @@ header {
 }
 
 .container {
-    padding: 20px;
+    width: 100%;
+    padding: 40px;
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 80px;
 }
 
 .container1 .texto-principal {
@@ -22,17 +23,40 @@ header {
     display: flex;
 }
 
+.container2 {
+    width: 50%;
+    float: right;
+    padding: 20px;
+    display: flex;
+    margin: 20px;
+    border: 10px solid#333;
+    border-radius: 15px;
+    color: black;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 2rem;
+}
+
 .caixa {
-    width: 200%;
+    font-size: 1.5rem;
     padding: 20px;
     margin: 10px;
     border: 2px solid#333;
     border-radius: 10px;
-
-    background-color: white;
+    
+    background-color: #ece6e0;
     text-align: center;
     box-sizing: border-box;
 
+}
+
+.texto-principal h2 {
+    font-size: 2rem;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.texto-principal h1 {
+    font-size: 1.5rem;
 }
 
 .texto-principal article {
