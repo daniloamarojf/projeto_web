@@ -20,6 +20,7 @@ article p {
     font-size: 2rem;
 }
 .sub-titulo {
+    padding: 100px 0 0 0;
     font-size: 5rem;
     text-align: center;
 }
@@ -67,6 +68,19 @@ article p {
     font-size: 2rem;
 }
 
+.container4 {
+    padding: 40px;
+    margin: 10px;
+    display: grid;                 /* Define o uso de Grid */
+    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de igual largura */
+    gap: 30px;                     /* Espaçamento entre as imagens */
+    justify-items: center;         /* Centraliza as imagens nas colunas */
+    align-items: center;           /* Centraliza as imagens nas linhas */
+    width: 80%;
+    height: 80vh;
+}
+
+
 .caixa {
     font-size: 1.5rem;
     padding: 20px;
@@ -112,6 +126,15 @@ article p {
     align-items: center;
 }
 
+.clientes {
+    background-image: url('/Atividade_I_design/img/imagem-clientes.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 nav {
     display: flex;
     padding: 10px;
@@ -145,7 +168,15 @@ nav a:hover {
     height: auto;
 }
 
+.imagem-cliente {
+    width: 35%;
+    height: auto;
+}
 
+.imagem-contato {
+    width: 5%;
+    height: auto;
+}
 
 /* Carrossel container */
 .carrossel {
@@ -181,4 +212,53 @@ nav a:hover {
 /* Aplica a animação no carrossel */
 .carrossel-images {
     animation: slide 30s infinite; /* Animação infinita a cada 30 segundos */
+}
+
+/* Estiliza o contêiner do formulário */
+.formulario-container {
+    width: 50%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.01);
+    border-radius: 8px;
+    float: right;
+}
+
+/* Estiliza os rótulos dos inputs */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Estiliza os campos de entrada de texto e email */
+input[type="text"],
+input[type="email"],
+input[tupe="telefone"]
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+/*Estiliza o botão de envio */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
 }
