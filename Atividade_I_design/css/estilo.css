@@ -15,29 +15,53 @@ header {
     background-color: dimgrey;
 }
 
-article p {
-    text-align: left;
-    font-size: 2rem;
-}
+
 .sub-titulo {
-    padding: 100px 0 0 0;
+    padding: 150px 0 0 0;
     font-size: 5rem;
     text-align: center;
 }
 
 .container {
     width: 100%;
-    padding: 40px;
+    padding: 10px;
     display: flex;
-    justify-content: space-between;
-    gap: 80px;
+    justify-content: space-around;
+    position: relative;/*para controlar a posição co container*/
+    z-index: 1;/*para o container aparecer acima de outra imagem*/
+    margin-top: 400px;
+
 }
 
-.container1 .texto-principal {
+.caixa {
+    width: 20%;
+    font-size: 1.5rem;
+    padding: 50px;
+    border: 1px solid#333;
+    border-radius: 10px;
+    background-color: rgba(209, 183, 160, 0.7);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.container1 {
     width: 50%;
-    float: left;
-    padding: 20px;
+    padding: 100px;
     display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 300px;
+}
+
+.texto-principal h2 {
+    font-size: 2rem;
+    margin-bottom: 30px; /*Para aumentar o espaço entre os páragrafos*/
+}
+
+.texto-principal h1 {
+    font-size: 1.5rem;
+    margin-bottom: 30px; /*Para aumentar o espaço */
 }
 
 .container2 {
@@ -46,22 +70,22 @@ article p {
     padding: 80px;
     display: flex;
     margin: 50px;
-    border: 2px solid#333;
-    border-radius: 15px;
     color: black;
     text-align: center;
     box-sizing: border-box;
     font-size: 2rem;
 }
 
+div p {
+    margin-bottom: 40px;
+}
+
 .container3 {
-    width: 25%;
+    width: 50%;
     float: left;
     padding: 80px;
     display: flex;
     margin: 50px;
-    border: 2px solid#333;
-    border-radius: 15px;
     color: black;
     text-align: center;
     box-sizing: border-box;
@@ -70,10 +94,11 @@ article p {
 
 .container4 {
     padding: 40px;
-    margin: 10px;
+    margin: auto;
     display: grid;                 /* Define o uso de Grid */
     grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de igual largura */
     gap: 30px;                     /* Espaçamento entre as imagens */
+    max-width: 100%;
     justify-items: center;         /* Centraliza as imagens nas colunas */
     align-items: center;           /* Centraliza as imagens nas linhas */
     width: 80%;
@@ -81,27 +106,9 @@ article p {
 }
 
 
-.caixa {
-    font-size: 1.5rem;
-    padding: 20px;
-    margin: 10px;
-    border: 2px solid#333;
-    border-radius: 10px;
-    
-    background-color: #ece6e0;
-    text-align: center;
-    box-sizing: border-box;
 
-}
 
-.texto-principal h2 {
-    font-size: 1.5rem;
-    font-family: "Ubuntu", sans-serif;
-}
 
-.texto-principal h1 {
-    font-size: 1.5rem;
-}
 
 .texto-principal article {
     padding: 20px;
@@ -110,7 +117,7 @@ article p {
     color: white;
     text-align: center;
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.4);
 
 }
 
@@ -124,6 +131,7 @@ article p {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .clientes {
@@ -150,10 +158,11 @@ nav {
 nav a {
     text-decoration: none;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav a:hover {
-    padding: 10px;
+    padding: 20px;
 }
 
 .menu { 
@@ -163,6 +172,8 @@ nav a:hover {
 }
 
 .imagem-sobre {
+    padding: 50px 0px 10px 10px;
+    margin: 50px 5px 10px 10px;
     float: left;
     width: 40%;
     height: auto;
@@ -180,6 +191,9 @@ nav a:hover {
 
 /* Carrossel container */
 .carrossel {
+    padding: 50px 0px 10px 10px; /* Similar ao padding da imagem-sobre */
+    margin: 50px 5px 10px 10px;  /* Similar ao margin da imagem-sobre */
+    float: right;
     width: 100%;
     max-width: 600px; /* Você pode ajustar o tamanho máximo do carrossel */
     margin: 50px auto;
