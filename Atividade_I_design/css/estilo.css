@@ -18,7 +18,7 @@ header {
 
 .sub-titulo {
     padding: 150px 0 0 0;
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -34,14 +34,19 @@ header {
 }
 
 .caixa {
-    width: 20%;
-    font-size: 1.5rem;
-    padding: 50px;
+    width: 25%;
+    font-size: 2rem;
+    padding: 30px 30px 5px 30px;
     border: 1px solid#333;
     border-radius: 10px;
     background-color: rgba(209, 183, 160, 0.7);
     text-align: center;
     box-sizing: border-box;
+}
+
+.caixa p {
+    justify-content: flex-start;
+    font-family: "Montserrat",sans-serif;
 }
 
 
@@ -60,16 +65,17 @@ header {
 }
 
 .texto-principal h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 30px; /*Para aumentar o espaço */
+    font-family: "Montserrat", sans-serif;
 }
 
 .container2 {
-    width: 50%;
+    width: 30%;
     float: right;
-    padding: 80px;
+    padding: 1px;
     display: flex;
-    margin: 50px;
+    margin: 60px;
     color: black;
     text-align: center;
     box-sizing: border-box;
@@ -151,14 +157,14 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 1000;
 }
 
 nav a {
     text-decoration: none;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
 }
 
 nav a:hover {
@@ -172,15 +178,15 @@ nav a:hover {
 }
 
 .imagem-sobre {
-    padding: 50px 0px 10px 10px;
-    margin: 50px 5px 10px 10px;
+    padding: 50px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
     float: left;
-    width: 40%;
+    width: 60%;
     height: auto;
 }
 
 .imagem-cliente {
-    width: 35%;
+    width: 60%;
     height: auto;
 }
 
@@ -191,14 +197,15 @@ nav a:hover {
 
 /* Carrossel container */
 .carrossel {
-    padding: 50px 0px 10px 10px; /* Similar ao padding da imagem-sobre */
-    margin: 50px 5px 10px 10px;  /* Similar ao margin da imagem-sobre */
+    padding: 50px 50px 0px 0px; /* Similar ao padding da imagem-sobre */
+    margin: 50px 50px 0px 0px;  /* Similar ao margin da imagem-sobre */
     float: right;
-    width: 100%;
-    max-width: 600px; /* Você pode ajustar o tamanho máximo do carrossel */
+    width: 60%;
+    max-width: 500px; /* Você pode ajustar o tamanho máximo do carrossel */
     margin: 50px auto;
     overflow: hidden; /* Oculta as imagens que não estão sendo exibidas */
 }
+
 
 /* Container de imagens dentro do carrossel */
 .carrossel-images {
@@ -208,7 +215,7 @@ nav a:hover {
 
 /* Estilo para cada imagem */
 .carrossel-images img {
-    width: 100%;
+    width: 80%;
     height: auto;
     flex-shrink: 0; /* Impede as imagens de encolher */
 }
@@ -230,7 +237,7 @@ nav a:hover {
 
 /* Estiliza o contêiner do formulário */
 .formulario-container {
-    width: 50%;
+    width: 40%;
     margin: auto;
     background: white;
     padding: 20px;
