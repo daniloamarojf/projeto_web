@@ -5,31 +5,30 @@
     box-sizing: border-box;
 }
 
+/*Definindo a cor de fundo*/
 body {
     background-color: floralwhite;
 }
 
 header {
-    padding: 0;
-    margin: 0;
     background-color: dimgrey;
 }
 
 
 .sub-titulo {
-    padding: 150px 0 0 0;
-    font-size: 3rem;
-    text-align: center;
+    padding: 150px 0 0 0; /*Espaço no topo*/
+    font-size: 4rem; /*Tamnaho da fonte*/
+    text-align: center;/*Alinhamento do texto*/
 }
 
 .container {
-    width: 100%;
+    width: 100%;/*Largura do container*/
     padding: 10px;
-    display: flex;
-    justify-content: space-around;
+    display: flex;/*Flexbox*/
+    justify-content: space-around;/*Distribuir os elementos igual no contaiber*/
     position: relative;/*para controlar a posição co container*/
     z-index: 1;/*para o container aparecer acima de outra imagem*/
-    margin-top: 400px;
+    margin-top: 400px;/*adicionar margem no topo do container*/
 
 }
 
@@ -37,16 +36,16 @@ header {
     width: 25%;
     font-size: 2rem;
     padding: 30px 30px 5px 30px;
-    border: 1px solid#333;
-    border-radius: 10px;
+    border: 1px solid#333;/*Definir borda*/
+    border-radius: 10px;/*Arredondar os cantos*/
     background-color: rgba(209, 183, 160, 0.7);
     text-align: center;
-    box-sizing: border-box;
+    box-sizing: border-box;/*Para modoficar o calculo do tamanho da caixa*/
 }
 
 .caixa p {
-    justify-content: flex-start;
-    font-family: "Montserrat",sans-serif;
+    justify-content: flex-start;/*Alinha o conteudo no container*/
+    font-family: "Montserrat",sans-serif;/*Fonte*/
 }
 
 
@@ -71,8 +70,8 @@ header {
 }
 
 .container2 {
-    width: 30%;
-    float: right;
+    width: 50%;
+    float: right;/*Direita*/
     padding: 1px;
     display: flex;
     margin: 60px;
@@ -87,15 +86,11 @@ div p {
 }
 
 .container3 {
-    width: 50%;
-    float: left;
-    padding: 80px;
-    display: flex;
-    margin: 50px;
     color: black;
     text-align: center;
-    box-sizing: border-box;
-    font-size: 2rem;
+    font-size: 4.3rem;
+    position: relative;
+
 }
 
 .container4 {
@@ -111,9 +106,16 @@ div p {
     height: 80vh;
 }
 
-
-
-
+.container5 {
+    width: 40%;
+    float: right;
+    padding: 100px;
+    display: flex;
+    margin: 60px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 2rem;
+}
 
 
 .texto-principal article {
@@ -181,12 +183,12 @@ nav a:hover {
     padding: 50px 0px 0px 0px;
     margin: 50px 0px 0px 0px;
     float: left;
-    width: 60%;
+    width: 40%;
     height: auto;
 }
 
 .imagem-cliente {
-    width: 60%;
+    width: 80%;
     height: auto;
 }
 
@@ -195,52 +197,23 @@ nav a:hover {
     height: auto;
 }
 
-/* Carrossel container */
-.carrossel {
-    padding: 50px 50px 0px 0px; /* Similar ao padding da imagem-sobre */
-    margin: 50px 50px 0px 0px;  /* Similar ao margin da imagem-sobre */
-    float: right;
-    width: 60%;
-    max-width: 500px; /* Você pode ajustar o tamanho máximo do carrossel */
-    margin: 50px auto;
-    overflow: hidden; /* Oculta as imagens que não estão sendo exibidas */
-}
-
-
-/* Container de imagens dentro do carrossel */
-.carrossel-images {
-    display: flex;
-    transition: transform 1s ease-in-out; /* Transição suave ao mudar as imagens */
-}
-
-/* Estilo para cada imagem */
-.carrossel-images img {
-    width: 80%;
+.imagem-portifolio {
+    width: 25%;
+    padding: 20px;
     height: auto;
-    flex-shrink: 0; /* Impede as imagens de encolher */
 }
 
-/* Animação para mover as imagens automaticamente */
-@keyframes slide {
-    0% { transform: translateX(0); }
-    20% { transform: translateX(-100%); }
-    40% { transform: translateX(-200%); }
-    60% { transform: translateX(-300%); }
-    80% { transform: translateX(-400%); }
-    100% { transform: translateX(-500%); }
-}
-
-/* Aplica a animação no carrossel */
-.carrossel-images {
-    animation: slide 30s infinite; /* Animação infinita a cada 30 segundos */
+.portifolio {
+    padding: 10px;
+    justify-items: center;         /* Centraliza as imagens nas colunas */
+    text-align: center;
 }
 
 /* Estiliza o contêiner do formulário */
 .formulario-container {
     width: 40%;
-    margin: auto;
+    margin: 100px 100px;
     background: white;
-    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.01);
     border-radius: 8px;
     float: right;
