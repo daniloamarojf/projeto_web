@@ -61,12 +61,14 @@ header {
 .texto-principal h2 {
     font-size: 2rem;
     margin-bottom: 30px; /*Para aumentar o espaço entre os páragrafos*/
+    font-family: "Open Sans", sans-serif;
 }
 
 .texto-principal h1 {
     font-size: 1.3rem;
     margin-bottom: 30px; /*Para aumentar o espaço */
-    font-family: "Montserrat", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
 }
 
 .container2 {
@@ -142,8 +144,9 @@ div p {
     position: relative;
 }
 
+
 .clientes {
-    background-image: url('/Atividade_I_design/img/imagem-clientes.jpg');
+    background-image: url('../img/imagem-clientes.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
