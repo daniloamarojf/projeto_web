@@ -10,10 +10,29 @@ body {
     background-color: floralwhite;
 }
 
-header {
-    background-color: dimgrey;
+
+nav {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
 }
 
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+}
+
+.imagem-logo {
+    width: 25%;
+}
 
 .sub-titulo {
     padding: 150px 0 0 0; /*Espaço no topo*/
@@ -40,13 +59,10 @@ header {
     border-radius: 10px;/*Arredondar os cantos*/
     background-color: rgba(209, 183, 160, 0.7);
     text-align: center;
-    box-sizing: border-box;/*Para modoficar o calculo do tamanho da caixa*/
+    justify-content: flex-start;/*Alinha o conteudo no container*/
+    font-family: "Open Sans", sans-serif;
 }
 
-.caixa p {
-    justify-content: flex-start;/*Alinha o conteudo no container*/
-    font-family: "Montserrat",sans-serif;/*Fonte*/
-}
 
 
 .container1 {
@@ -69,6 +85,17 @@ header {
     margin-bottom: 30px; /*Para aumentar o espaço */
     font-family: "Open Sans", sans-serif;
     font-weight: 100;
+}
+
+.texto-principal article {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.4);
+
 }
 
 .container2 {
@@ -120,16 +147,6 @@ div p {
 }
 
 
-.texto-principal article {
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-    box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.4);
-
-}
 
 
 .principal {
@@ -139,7 +156,7 @@ div p {
     width: 100%;
     height: 756px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
 }
@@ -154,27 +171,9 @@ div p {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-nav {
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1000;
-}
 
-nav a {
-    text-decoration: none;
-    color: white;
-    font-family: Arial;
-}
 
-nav a:hover {
-    padding: 20px;
-}
+
 
 .menu { 
     padding: 10px;
