@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Meta tags padrão para configuração do documento-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação Simples com CSS3</title>
+
+    <style>
+        /* Estilos para o corpo da página */
+        body {
+            display: flex; /* Usa flexbox para centralizar*/
+            justify-content: center; /* Centraliza horizontalmente*/
+            align-items: center; /* Centraliza verticalmente*/
+            height: 100vh; /* Altura total da viewport */
+            background-color: #f0f0f0;
+        }
+
+        /* Estilos para caixa que será animada*/
+        .caixa {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            border-radius: 10px;
+
+            /* Propiedades da Animação*/
+            animation: moverEColorir 4s ease-in-out infinite alternate;
+            /*Nome da animação: moverEColorir*/
+            /* Duração: 4 segundos */
+            /* Timing funcition: ease-in-out (suaviza inicio e fim */
+            /* Iterações: infinite (repete infinitmente */
+            /*Direção: alternate (vai e volta) */
+        }
+
+        /* Definição dos Keyframes (quadros-chave) da animação*/
+        @keyframes moverEColorir {
+            /* Estado inicial (0% do tempo da animação) */
+            0% {
+                transform: translateY(0);  /* Posição vertical inicial */
+                background-color: #3498db; /* Cor azul */
+            }
+
+            /* Estado intermediário (50% do tempo da animação) */
+            50% {
+                transform: translateY(-100px); /* Move 100px */
+                background-color: #e74c3c; /* Muda para vermelho */
+            }
+
+            /* Estado final (100% do tempo da animação) */
+            100% {
+                transform: translateY(0); /* Volta á posição inicial */
+                background-color: #2ecc71;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Div que receberá a animação -->
+     <div class="caixa"></div>
+</body>
+</html>

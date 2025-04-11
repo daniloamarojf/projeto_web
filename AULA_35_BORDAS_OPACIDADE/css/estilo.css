@@ -16,7 +16,7 @@ body {
 
 /* Estilo do cabeçãlho */
 .cabecalho {
-    background-color: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
+    background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
     color: white;
     text-align: center;
     padding: 2rem 1rem;
@@ -25,7 +25,7 @@ body {
 
 .cabecalho h1 {
     font-family: 'Roboto' sans-serif;
-    font-weight: 500;
+    font-weight: 500; /* negrito*/
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
@@ -40,7 +40,7 @@ body {
 .navegacao {
     background-color: #333;
     padding: 1rem 0;
-    position: sticky;
+    position: sticky;/* fixa até um limite */
     top: 0;
     z-index: 100;
 }
@@ -116,7 +116,7 @@ body {
 .borda-imagem {
     border: 15px solid transparent;
     border-image: linear-gradient(45deg, #6e48aa, #9d50bb) 1; /*Borda com gradiente */
-}
+}                            /* grau de movimento de uma cor a outra*/
 
 /* Estilos específicos para exemplos de opacidade */
 .exemplo-opacidade-container {
@@ -155,7 +155,7 @@ body {
 /* Estilos especificos para exemplos de gradiente */
 .exemplo-gradiente {
     padding:  3rem 1rem;
-    margin: 1.5rem;
+    margin: 1.5rem 0;
     text-align: center;
     color: #333;
     border-radius: 8px;
@@ -166,11 +166,11 @@ body {
 }
 
 .gradiente-radial {
-    background: linear-gradient(circle, #6e48aa, #9d50bb, #4776e6); /* Gradiente linear*/
+    background: radial-gradient(circle, #6e48aa, #9d50bb, #4776e6); /* Gradiente radial*/
 }
 
 .gradiente-angulo {
-    background: linear-gradient(45deg, #6e48aa, #4776e6); /* Gradiente linear*/
+    background: linear-gradient(45deg, #6e48aa, #4776e6); /* Gradiente com ângulos*/
 }
 
 .gradiente-multiplo {
@@ -178,7 +178,7 @@ body {
         #6e48aa, 
         #8a4db3,
         #9d50bb,
-        #b053c2
+        #b053c2,
         #c256c9); /* Gradiente com multiplas cores*/
 }
 
@@ -196,4 +196,33 @@ body {
     opacity: 0.8;
 }
 
-/*Estilos para c
+/*Estilos para codigo (elemento code)*/
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0f0f0;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+}
+
+/*Responsividade - ajustes para telas menores */
+@media (max-width: 768px) {
+    .navegacao ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegacao li {
+        margin: 0.5rem 0;
+    }
+
+    .exemplo-opacidade-container {
+        flex-wrap: wrap;
+    }
+
+    .exemplo-opacidade {
+        width: 30%;
+        margin-bottom: 1rem;
+    }
+}
