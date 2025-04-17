@@ -30,7 +30,7 @@ header, nav, main, section, aside, footer {
     text-align: center;
 
     /* Flexbox para alinhar conteúdo verticalmente (se houver múltiplos elementos)*/
-    display: felx;
+    display: flex;
     flex-direction: column;
     justify-content: center; /* Alinha verticalmente*/
     align-items: center; /* Alinha horizontalmente*/
