@@ -4,56 +4,251 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet Feliz</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/estilo.css" />
   </head>
   <body>
     <header>
       <nav class="navegacao">
-        <a href="#">Home</a>
-        <a href="#">Sobre</a>
-        <a href="#">Serviços</a>
-        <a href="#">Clientes</a>
-        <a href="#">Contatos</a>
+        <img class="imagem-logo" src="img/Pet Feliz.png" alt="" />
+
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#contato">Contatos</a>
       </nav>
     </header>
 
-    <main >
+    <main>
       <div class="container">
-      <section class="principal">
-        <div class="texto" >
-        <h2>Porque um pet feliz começa com um cuidado de verdade.</h2>
-        <p>
-          Banho, tosa, petiscos e muito carinho — tudo em um só lugar, feito com
-          amor.
-        </p>
-        </div>
-        <div>
-          <img class="imagem1" src="img/Cão e gato.png" alt="" />
-        </div>
-      </section>
-      
-        
-      
+        <section class="principal">
+          <div class="texto">
+            <h2>Porque um pet feliz começa com um cuidado de verdade.</h2>
+            <p>
+              Banho, tosa, petiscos e muito carinho — tudo em um só lugar, feito
+              com amor.
+            </p>
+          </div>
+          <div>
+            <img class="imagem1" src="img/Cão e gato.png" alt="" />
+          </div>
+        </section>
       </div>
-      <section class="container1">
-          <img class="imagem-pet" src="img/Gato em pe.png" alt="">
+
+      <section id="sobre" class="container1">
+        <img class="imagem-pet" src="img/Gato em pe.png" alt="" />
         <div class="texto-entre">
           <h1>
             No Pet Feliz, acreditamos que todo pet merece amor, cuidado e muita
-            alegria! Somos apaixonados por animais e estamos aqui para oferecer
-            os melhores serviços e produtos para o seu melhor amigo. Com uma
-            equipe especializada e um ambiente acolhedor, oferecemos banho e
-            tosa com carinho, produtos de higiene e beleza, rações de qualidade
-            e uma linha completa de acessórios para deixar seu pet ainda mais
-            feliz e saudável. Mais do que um pet shop, somos um lugar onde os
-            laços entre humanos e animais se fortalecem todos os dias. Venha nos
-            conhecer — seu pet vai adorar!
+            alegria!
           </h1>
+          <p>
+            Somos apaixonados por animais e estamos aqui para oferecer os
+            melhores serviços e produtos para o seu melhor amigo. Com uma equipe
+            especializada e um ambiente acolhedor, oferecemos banho e tosa com
+            carinho, produtos de higiene e beleza, rações de qualidade e uma
+            linha completa de acessórios para deixar seu pet ainda mais feliz e
+            saudável.<br />
+            Mais do que um pet shop, somos um lugar onde os laços entre humanos
+            e animais se fortalecem todos os dias. Venha nos conhecer — seu pet
+            vai adorar!
+          </p>
         </div>
-        
-          <img class="imagem-pet" src="img/Cão em pé.png" alt="">
-        
+
+        <img class="imagem-pet" src="img/Cão em pé.png" alt="" />
       </section>
+
+      <section class="parallax"></section>
+
+      <section id="servicos">
+        <h2 class="titulos">Serviços</h2>
+        <p class="sub-titulo">Nosso serviços para seu pet ficar mais feliz.</p>
+        <div class="servicos">
+          <figure>
+            <a href="banho_tosa.html">
+              <img
+                class="imagem-servicos"
+                src="img/Banho e tosa.jpg"
+                alt="Banho e tosa"
+            /></a>
+            <figcaption class="tipo-servico">
+              Banho e Tosa
+              <p>
+                "Estética Pet de Alto Nível: Banho & Tosa <br />
+                com Excelência"
+              </p>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <a href="acessorios.html">
+              <img
+                class="imagem-servicos"
+                src="img/Acessórios.jpg"
+                alt="Acessórios"
+            /></a>
+            <figcaption class="tipo-servico">
+              Acessórios
+              <p>
+                "Acessórios que Deixam Seu Pet <br />
+                Ainda Mais Fofo"
+              </p>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <a href="racoes.html">
+              <img class="imagem-servicos" src="img/Raçoes.jpg" alt="Rações"
+            /></a>
+            <figcaption class="tipo-servico">
+              Rações
+              <p>
+                "Nutrição de Qualidade Para a Saúde <br />e o Bem-Estar do Seu
+                Pet"
+              </p>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <a href="higiene-limpeza.html">
+              <img
+                class="imagem-servicos"
+                src="img/Higiene e beleza.jpg"
+                alt="Higiene e beleza"
+            /></a>
+            <figcaption class="tipo-servico">
+              Higiene e Beleza
+              <p>
+                "Cheirinho Bom, Pelinho Brilhando <br />e Muito Charme no Ar!"
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="parallax"></section>
+
+      <section id="clientes">
+        <h2 class="titulos">Clientes</h2>
+        <p class="sub-titulo">Sorrisos, rabinhos abanando e muito amor!.</p>
+
+        <div class="cliente-container">
+          <img class="clientes-img" src="img/Cliente1.jpg" alt="" />
+          <div class="clientes-container-texto">
+            <p class="clientes-texto">
+              "Esse é o Thor: Grandão no tamanho, mas um bebê no coração. Adora
+              a hora do banho e relaxa como se estivesse num spa!""
+            </p>
+          </div>
+
+          <img class="clientes-img" src="img/Cliente2.jpg" alt="" />
+          <div class="clientes-container-texto">
+            <p class="clientes-texto">
+              "Esse é o Chico: Curioso e esperto, adora ficar de olho em tudo.
+              Mas na hora da tosa, fecha os olhinhos e aproveita o carinho.""
+            </p>
+          </div>
+        </div>
+
+        <div class="cliente-container">
+          <img class="clientes-img" src="img/Cliente3.jpg" alt="" />
+          <div class="clientes-container-texto">
+            <p class="clientes-texto">
+              "Essa é a Nina: Delicada e tímida, mas se transforma no banho. Sai
+              toda charmosa, como se soubesse que está linda!""
+            </p>
+          </div>
+
+          <img class="clientes-img" src="img/Cliente4.jpg" alt="" />
+          <div class="clientes-container-texto">
+            <p class="clientes-texto">
+              "Essa é a Mel: Uma princesinha vaidosa que ama ser mimada. Seu
+              momento favorito é a escovação com cheirinho de lavanda.""
+            </p>
+          </div>
+        </div>
+
+        <div class="cliente-container">
+          <img class="clientes-img" src="img/Cliente5.jpg" alt="" />
+          <div class="clientes-container-texto">
+            <p class="clientes-texto">
+              "Essa é a Lola: Super animada e cheia de energia! Chega pulando de
+              alegria e não vê a hora de sair com o laço novo no pelo.""
+            </p>
+          </div>
+
+          <img class="clientes-img" src="img/Cliente6.jpg" alt="" />
+          <div class="clientes-container-texto">
+            <p class="clientes-texto">
+              "Este é o Max: Dengoso e adora nosso banho e tosa. Sempre sai
+              abanando o rabo e dando beijinhos na equipe!""
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="contato" class="container-final">
+        <div>
+          <nav class="navegacao-final">
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#clientes">Clientes</a>
+            <a href="#contato">Contatos</a>
+          </nav>
+          <h1 class="titulo-final">Endereço:</h1>
+          <p class="sub-final">
+            Rua Olimpio Costa, 145 - Benfica <br />
+            Juiz de Fora - MG
+          </p>
+          <h1 class="titulo-final">Email:</h1>
+          <p class="sub-final">petfeliz@gmail.com</p>
+          <h1 class="titulo-final">Telefone:</h1>
+          <p class="sub-final">(32) 3222-9157</p>
+        </div>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2061.4318259386355!2d-43.43181897218784!3d-21.691468968425344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1745371046079!5m2!1spt-BR!2sbr"
+            width="350"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div>
+          <form class="formulario-container">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <label for="telefone">Telefone</label>
+            <input type="telefone" id="telefone" name="telefone" required />
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        <p>&copy; 2025 - Nosso site Pet Feliz</p>
+        <p>Todos os direitos reservados</p>
+      </footer>
     </main>
   </body>
 </html>

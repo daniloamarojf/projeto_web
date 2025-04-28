@@ -8,17 +8,29 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Home*/
+
+.imagem-logo {
+  width: 12%;
+  background-color: white;
+  flex-wrap: wrap; 
+  display: flex; 
+}
+
 .navegacao {
+    background-color: white;
+    width: 100%;
+    position: fixed;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: end;
+
 }
 
 .navegacao a {
     text-decoration: none;
     color:cornflowerblue;
-    padding: 20px 20px;
-    text-align: center;
+    padding: 30px 30px;
     transition: background-color 0.4s;
     font-size: 1.5rem;
 }
@@ -26,9 +38,7 @@ body {
 .navegacao a:hover {
     background-color: midnightblue;
     color: white;
-    
 }
-
 
 .container {
     background-color: rgb(224, 201, 245);
@@ -40,7 +50,6 @@ body {
 }
 
 .principal {
-    justify-content: space-between;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -49,18 +58,13 @@ body {
     
 }
 
-
-
 section h2 {
     font-size: 3.5rem;
-    margin-bottom: 30px;
-   
-    
+    margin-bottom: 30px;  
 }
 
 section p {
     font-size: 1.3rem;
- 
 }
 
 .texto {
@@ -68,10 +72,11 @@ section p {
 }
 
 .imagem1 {
-    max-width: 1000px;
+    max-width: 800px;
     height: auto;
-
 }
+
+/* Sobre*/
 
 .container1 {
     display: flex;
@@ -89,7 +94,307 @@ section p {
 }
 
 .texto-entre {
-    max-width: 750px;
+    max-width: 700px;
     text-align: center;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .navegacao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegacao a {
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+
+    .imagem-logo {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+
+    .container, .container1 {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagem1, .imagem-pet {
+        max-width: 100%;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .imagem-servicos {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+.parallax {
+    background-image: url('../img/Imagem\ parallax.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+
+/* Serviços */
+
+.servicos {
+    display: flex;
+    padding: 10px;
+    justify-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;          
+    text-align: center;
+}
+
+.figure {
+    text-align: center;
+    width: 100px;
+}
+
+.imagem-servicos {
+    width: 100%;
+    max-width: 300px;
+    height: 320px;
+    padding: 20px;
 
 }
+
+figcaption {
+    margin-top: 8px;
+    font-size: 2rem;
+  }
+  
+  .titulos {
+    font-size: 4.5rem;
+    color: darkcyan;
+    padding: 40px 0px 0px 40px;
+    font-family: 'National Park';
+}
+
+.sub-titulo {
+    font-size: 2rem;
+    padding: 0px 40px 40px;
+    font-family: 'National Park';
+
+}
+
+.tipo-servico {
+    font-family: 'National Park';
+    color: darkcyan;
+    font-size: 2rem;
+}
+
+.tipo-servico p {
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .principal {
+        flex-direction: column;
+    }
+    .servicos {
+        justify-content: center;
+    }
+}
+
+
+/* Clientes */
+
+.cliente-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.clientes-container-texto {
+    width: 250px;
+    height: 250px;
+    background-color:rgb(219, 238, 244);
+}
+
+.clientes-texto {
+    max-width: 180px;
+    margin: 20px;
+    font-size: 1.3rem;
+    justify-content: center;
+    
+}
+.clientes-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .cliente-container {
+        padding: 20px;
+        flex-direction: column;
+    }
+    
+    .clientes-container-texto {
+        max-width: 100%;
+    }
+    
+    .clientes-texto {
+        max-width: 180px;
+        font-size: 1.3rem;
+        
+    }
+    .clientes-img {
+        max-width: 100%;
+    }
+    
+
+}
+
+/* Container Final*/
+
+.container-final {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.formulario-container {
+    width: 100%;
+    margin: 100px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.01);
+    border-radius: 8px;
+    float: right;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[tupe="tel"]
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+/*Estiliza o botão de envio */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.navegacao-final {
+    background-color: #f9f9f9;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.navegacao-final a {
+    text-decoration: none;
+    color:cornflowerblue;
+    padding: 0px 30px;
+    transition: background-color 0.4s;
+    font-size: 1.5rem;
+    font-family: 'National Park';
+
+}
+
+.navegacao-final a:hover {
+    background-color: midnightblue;
+    color: white;
+    
+}
+
+.titulo-final {
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    font-family: 'National Park';
+
+}
+
+.sub-final {
+    font-size: 1rem;
+    padding: 0px 30px;
+    font-family: 'National Park';
+
+}
+
+@media (max-width: 768px) {
+
+
+    .container-final {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .formulario-container {
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+        margin: 0 auto;
+        text-align: left;
+    }
+    
+    label {
+        flex-direction: column;
+    }
+    
+    .navegacao-final {
+        text-align: center;
+    }
+    
+    .navegacao-final a {
+        font-size: 1.2rem;
+        align-items: center;
+    }
+    
+    .titulo-final, .sub-final{
+        font-size: 1.5rem;
+    }
+}
+
+/*Footer*/
+
+footer {
+    background-color:midnightblue;
+    padding: 20px;
+}
+
