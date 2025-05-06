@@ -18,17 +18,19 @@
   <body>
     <header>
       <nav class="navegacao">
-        <img class="imagem-logo" src="img/Pet Feliz.png" alt="" />
-
-        <a href="#home">Home</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#clientes">Clientes</a>
-        <a href="#contato">Contatos</a>
+        <div>
+          <img class="imagem-logo" src="img/Pet Feliz.png" alt="" />
+        </div>
+        <div class="menu-links">
+          <a href="index.html">Home</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="servicos.html">Serviços</a>
+          <a href="clientes.html">Clientes</a>
+        </div>
       </nav>
     </header>
 
-    <main>
+    <main id="index">
       <div class="container">
         <section class="principal">
           <div class="texto">
@@ -69,130 +71,66 @@
 
       <section class="parallax"></section>
 
-      <section id="servicos">
-        <h2 class="titulos">Serviços</h2>
-        <p class="sub-titulo">Nosso serviços para seu pet ficar mais feliz.</p>
-        <div class="servicos">
-          <figure>
-            <a href="banho_tosa.html">
+      <section>
+        <h2 class="titulos">
+          Profissionais treinados para fazer seu Pet Feliz
+        </h2>
+
+        <section class="clientes-bloco">
+          <div class="clientes-depoimentos">
+            <div class="cliente-container">
               <img
-                class="imagem-servicos"
-                src="img/Banho e tosa.jpg"
-                alt="Banho e tosa"
-            /></a>
-            <figcaption class="tipo-servico">
-              Banho e Tosa
-              <p>
-                "Estética Pet de Alto Nível: Banho & Tosa <br />
-                com Excelência"
-              </p>
-            </figcaption>
-          </figure>
+                class="clientes-img"
+                src="img/Cliente1.jpg"
+                alt="Cliente 1"
+              />
+              <div class="clientes-container-texto">
+                <h3>Alice - Esteticista pet</h3>
+                <p class="texto-funcionario">
+                  "Na Pet Feliz, unimos técnica, experiência e amor aos animais
+                  para oferecer serviços de estética pet com excelência. Cada
+                  banho, tosa e cuidado é realizado com atenção aos detalhes,
+                  garantindo o bem-estar do seu pet e reafirmando nosso
+                  compromisso com a qualidade em cada atendimento."
+                </p>
+              </div>
+            </div>
 
-          <figure>
-            <a href="acessorios.html">
+            <div class="cliente-container">
               <img
-                class="imagem-servicos"
-                src="img/Acessórios.jpg"
-                alt="Acessórios"
-            /></a>
-            <figcaption class="tipo-servico">
-              Acessórios
-              <p>
-                "Acessórios que Deixam Seu Pet <br />
-                Ainda Mais Fofo"
-              </p>
-            </figcaption>
-          </figure>
-
-          <figure>
-            <a href="racoes.html">
-              <img class="imagem-servicos" src="img/Raçoes.jpg" alt="Rações"
-            /></a>
-            <figcaption class="tipo-servico">
-              Rações
-              <p>
-                "Nutrição de Qualidade Para a Saúde <br />e o Bem-Estar do Seu
-                Pet"
-              </p>
-            </figcaption>
-          </figure>
-
-          <figure>
-            <a href="higiene-limpeza.html">
-              <img
-                class="imagem-servicos"
-                src="img/Higiene e beleza.jpg"
-                alt="Higiene e beleza"
-            /></a>
-            <figcaption class="tipo-servico">
-              Higiene e Beleza
-              <p>
-                "Cheirinho Bom, Pelinho Brilhando <br />e Muito Charme no Ar!"
-              </p>
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="parallax"></section>
-
-      <section id="clientes">
-        <h2 class="titulos">Clientes</h2>
-        <p class="sub-titulo">Sorrisos, rabinhos abanando e muito amor!.</p>
-
-        <div class="cliente-container">
-          <img class="clientes-img" src="img/Cliente1.jpg" alt="" />
-          <div class="clientes-container-texto">
-            <p class="clientes-texto">
-              "Esse é o Thor: Grandão no tamanho, mas um bebê no coração. Adora
-              a hora do banho e relaxa como se estivesse num spa!""
-            </p>
+                class="clientes-img"
+                src="img/Cliente1.jpg"
+                alt="Cliente 1"
+              />
+              <div class="clientes-container-texto">
+                <h3>Carlos Eduardo - Farmaceutico pet</h3>
+                <p class="texto-funcionario">
+                  "Como farmacêutico veterinário, cuido da saúde dos pets com
+                  responsabilidade e carinho. Na Pet Feliz, oferecemos
+                  orientação segura sobre medicamentos e bem-estar, unindo
+                  conhecimento técnico e amor pelos animais."
+                </p>
+              </div>
+            </div>
           </div>
 
-          <img class="clientes-img" src="img/Cliente2.jpg" alt="" />
-          <div class="clientes-container-texto">
-            <p class="clientes-texto">
-              "Esse é o Chico: Curioso e esperto, adora ficar de olho em tudo.
-              Mas na hora da tosa, fecha os olhinhos e aproveita o carinho.""
-            </p>
+          <div class="imagem-funcionario-container">
+            <img
+              class="imagem-funcionario"
+              src="img/Gato em pe.png"
+              alt="Funcionário com gato"
+            />
           </div>
-        </div>
+        </section>
 
-        <div class="cliente-container">
-          <img class="clientes-img" src="img/Cliente3.jpg" alt="" />
-          <div class="clientes-container-texto">
-            <p class="clientes-texto">
-              "Essa é a Nina: Delicada e tímida, mas se transforma no banho. Sai
-              toda charmosa, como se soubesse que está linda!""
-            </p>
-          </div>
-
-          <img class="clientes-img" src="img/Cliente4.jpg" alt="" />
-          <div class="clientes-container-texto">
-            <p class="clientes-texto">
-              "Essa é a Mel: Uma princesinha vaidosa que ama ser mimada. Seu
-              momento favorito é a escovação com cheirinho de lavanda.""
-            </p>
-          </div>
-        </div>
-
-        <div class="cliente-container">
-          <img class="clientes-img" src="img/Cliente5.jpg" alt="" />
-          <div class="clientes-container-texto">
-            <p class="clientes-texto">
-              "Essa é a Lola: Super animada e cheia de energia! Chega pulando de
-              alegria e não vê a hora de sair com o laço novo no pelo.""
-            </p>
-          </div>
-
-          <img class="clientes-img" src="img/Cliente6.jpg" alt="" />
-          <div class="clientes-container-texto">
-            <p class="clientes-texto">
-              "Este é o Max: Dengoso e adora nosso banho e tosa. Sempre sai
-              abanando o rabo e dando beijinhos na equipe!""
-            </p>
-          </div>
+        <div>
+          <p>
+            "Na Pet Feliz, unimos técnica, experiência e amor aos animais para
+            oferecer serviços de estética pet com excelência. Cada banho, tosa e
+            cuidado é realizado com atenção aos detalhes, garantindo o bem-estar
+            do seu pet e reafirmando nosso compromisso com a qualidade em cada
+            atendimento."
+          </p>
         </div>
       </section>
 
@@ -205,7 +143,6 @@
             <a href="#sobre">Sobre</a>
             <a href="#servicos">Serviços</a>
             <a href="#clientes">Clientes</a>
-            <a href="#contato">Contatos</a>
           </nav>
           <h1 class="titulo-final">Endereço:</h1>
           <p class="sub-final">

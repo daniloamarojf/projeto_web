@@ -11,11 +11,10 @@ body {
 /* Home*/
 
 .imagem-logo {
-  width: 12%;
-  background-color: white;
-  flex-wrap: wrap; 
-  display: flex; 
-}
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+  }
 
 .navegacao {
     background-color: white;
@@ -24,21 +23,29 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
+    gap: 900px;
 
 }
 
-.navegacao a {
+.menu-links {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-links a {
     text-decoration: none;
-    color:cornflowerblue;
-    padding: 30px 30px;
-    transition: background-color 0.4s;
+    color: cornflowerblue;
+    padding: 70px 50px 10px;
     font-size: 1.5rem;
+    transition: background-color 0.4s;
 }
 
-.navegacao a:hover {
+.menu-links a:hover {
     background-color: midnightblue;
     color: white;
+    padding: 50px 50px 10px;
 }
+
 
 .container {
     background-color: rgb(224, 201, 245);
@@ -99,6 +106,12 @@ section p {
     line-height: 1.8;
 }
 
+.imagem-funcionario {
+    max-width: 400px;
+    height: auto;
+}
+
+
 @media (max-width: 768px) {
     .navegacao {
         flex-direction: column;
@@ -106,8 +119,8 @@ section p {
     }
 
     .navegacao a {
-        padding: 15px;
-        font-size: 1.2rem;
+        padding: 5px;
+        font-size: 1rem;
     }
 
     .imagem-logo {
@@ -132,6 +145,12 @@ section p {
     .imagem-servicos {
         width: 180px;
         height: 180px;
+    }
+
+    .texto {
+        margin-top: 200px;
+        max-width: 180px;
+        font-size: 1.3rem;
     }
 }
 
@@ -397,4 +416,41 @@ footer {
     background-color:midnightblue;
     padding: 20px;
 }
+
+.clientes-bloco {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .clientes-depoimentos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .cliente-container {
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .clientes-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .clientes-container-texto {
+    flex: 1;
+  }
 
